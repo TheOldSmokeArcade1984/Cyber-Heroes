@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#00ff00">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>LEA // OBLIVION</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23000'/%3E%3Crect x='4' y='8' width='56' height='48' rx='4' fill='%23001400' stroke='%2300ff00' stroke-width='1.5'/%3E%3Cpath d='M32 12c-11 0-18 7-18 16 0 5 2 9 5 11v9c0 3 5 5 13 5s13-2 13-5v-9c3-2 5-6 5-11 0-9-7-16-18-16z' fill='none' stroke='%2300ff00' stroke-width='2.5' stroke-dasharray='3 1'/%3E%3Cellipse cx='24' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cellipse cx='40' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cpath d='M30 33l2-3 2 3' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='%2300ff00' font-family='monospace' font-weight='bold' font-size='15' letter-spacing='1'%3ECH%3C/text%3E%3Cpath d='M25 49h14' stroke='%2300ff00' stroke-width='2' stroke-dasharray='2 2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>
+if (location.protocol === 'http:' || location.protocol === 'https:') {
+  const m = document.createElement('link');
+  m.rel = 'manifest'; m.href = 'manifest.json';
+  document.head.appendChild(m);
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+  }
+}
+</script>
+</head>
+<body data-page="lea">
+<a id="skip-link" href="#dlg" class="skip-link">Salta al testo</a>
+<div id="crt">
+  <main class="container" role="main">
+    <div id="top-bar" class="top-bar"></div>
+    <div class="story-grid">
+      <!-- COLONNA SINISTRA SU PC: Immagine + Prompt sotto -->
+      <div class="left-col">
+        <div id="img-container" role="region" aria-label="Visual Monitor"></div>
+        <div id="promptbox" role="region" aria-labelledby="req-txt" style="display:none">
+          <div id="req-txt" style="margin-bottom:8px;color:#88ff88;font-size:0.95em"></div>
+          <input id="pin" type="text" placeholder="digita il comando" autocomplete="off" aria-describedby="req-txt" onkeydown="if(event.key==='Enter')checkPrompt()">
+          <button id="btn-go" type="button" class="go" onclick="checkPrompt()">INVIA</button>
+          <div id="pmsg" role="alert" aria-live="assertive" style="margin-top:6px;min-height:1.2em"></div>
+        </div>
+      </div>
+      <!-- COLONNA DESTRA SU PC: Testo da leggere + Scelte -->
+      <div class="right-col">
+        <article id="dlg" role="region" aria-live="polite" tabindex="0">Caricamento sistema...</article>
+        <nav id="choices" role="navigation" aria-label="Scelte narrative"></nav>
+      </div>
+    </div>
+    <footer class="nav-footer">
+      <a id="link-back" href="index.html">← Menu principale</a>
+      <a id="link-restart" href="#" onclick="showNode('start');return false">↻ Ricomincia percorso</a>
+    </footer>
+  </main>
+</div>
+<script src="engine.js"></script>
+</body>
+</html>

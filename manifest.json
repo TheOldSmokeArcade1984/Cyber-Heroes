@@ -1,0 +1,62 @@
+{
+  "id": "cyber-heroes-oblivion-ultra",
+  "name": "Cyber Heroes // Oblivion - Ultra",
+  "short_name": "CyberHeroes",
+  "description": "Interactive 80s Green Phosphor CRT Narrative Game — Lea, Smoke & Thestral. Multi-language (8 languages), WAI-ARIA & TTS.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#000000",
+  "theme_color": "#00ff00",
+  "orientation": "any",
+  "categories": ["games", "entertainment", "books"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23000'/%3E%3Crect x='4' y='8' width='56' height='48' rx='4' fill='%23001400' stroke='%2300ff00' stroke-width='1.5'/%3E%3Cpath d='M32 12c-11 0-18 7-18 16 0 5 2 9 5 11v9c0 3 5 5 13 5s13-2 13-5v-9c3-2 5-6 5-11 0-9-7-16-18-16z' fill='none' stroke='%2300ff00' stroke-width='2.5' stroke-dasharray='3 1'/%3E%3Cellipse cx='24' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cellipse cx='40' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cpath d='M30 33l2-3 2 3' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='%2300ff00' font-family='monospace' font-weight='bold' font-size='15' letter-spacing='1'%3ECH%3C/text%3E%3Cpath d='M25 49h14' stroke='%2300ff00' stroke-width='2' stroke-dasharray='2 2'/%3E%3C/svg%3E",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon_src.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Lea's Path [Tech / Patch]",
+      "short_name": "Lea",
+      "description": "Start or resume Lea's narrative path",
+      "url": "./lea.html"
+    },
+    {
+      "name": "Smoke's Path [Streets / Guard]",
+      "short_name": "Smoke",
+      "description": "Start or resume Smoke's narrative path",
+      "url": "./smoke.html"
+    },
+    {
+      "name": "Thestral's Path [Code / Vision]",
+      "short_name": "Thestral",
+      "description": "Start or resume Thestral's narrative path",
+      "url": "./thestral.html"
+    }
+  ]
+}

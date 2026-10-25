@@ -1,0 +1,16 @@
+/* TEAM & CREATOR */
+Developer & Designer: TheOldSmokeArcade1984
+Project: CYBER HEROES // OBLIVION - ULTRA
+Role: Game Design, Narrative, CRT Aesthetics, Code Architecture
+GitHub: https://github.com/theoldsmokearcade1984
+
+/* GAME INFO */
+Protagonists: Lea, Smoke, Thestral
+Theme: 1980s Green Phosphor CRT Cyberpunk Interactive Fiction
+Languages: Italian (IT), English (EN), Spanish (ES), French (FR), German (DE), Portuguese (PT), Japanese (JA), Chinese (ZH)
+Accessibility: WAI-ARIA 1.2 compliant, Multi-language Web Speech API TTS, Adaptive 2-Column PC / 1-Column Mobile Layout
+
+/* SITE */
+Last update: 2026-10-25
+Standards: HTML5, CSS3, ES6 JavaScript, PWA, WAI-ARIA
+IDE: Windows Notepad (Hand-crafted line by line)

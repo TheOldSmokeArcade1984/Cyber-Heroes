@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#00ff00">
+<meta name="color-scheme" content="dark">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="TheOldSmokeArcade1984">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="description" content="CYBER HEROES // OBLIVION - Gioco narrativo interattivo cyberpunk CRT fosfori verdi anni 80. Percorsi Lea, Smoke, Thestral. Multilingua (8 lingue), WAI-ARIA e TTS.">
+
+<!-- Open Graph / Social Preview -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TheOldSmokeArcade1984">
+<meta property="og:title" content="CYBER HEROES // OBLIVION - ULTRA">
+<meta property="og:description" content="Il virus Oblivion sta cancellando il ricordo stesso di internet. Gioca i percorsi di Lea, Smoke e Thestral in un terminale CRT anni 80.">
+<meta property="og:image" content="images/shared/loft.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CYBER HEROES // OBLIVION - ULTRA">
+<meta name="twitter:description" content="Gioco narrativo interattivo CRT fosfori verdi anni 80 — TheOldSmokeArcade1984.">
+<meta name="twitter:image" content="images/shared/loft.jpg">
+
+<link rel="author" type="text/plain" href="humans.txt">
+<title>CYBER HEROES // OBLIVION - ULTRA</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23000'/%3E%3Crect x='4' y='8' width='56' height='48' rx='4' fill='%23001400' stroke='%2300ff00' stroke-width='1.5'/%3E%3Cpath d='M32 12c-11 0-18 7-18 16 0 5 2 9 5 11v9c0 3 5 5 13 5s13-2 13-5v-9c3-2 5-6 5-11 0-9-7-16-18-16z' fill='none' stroke='%2300ff00' stroke-width='2.5' stroke-dasharray='3 1'/%3E%3Cellipse cx='24' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cellipse cx='40' cy='28' rx='5' ry='3.5' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Cpath d='M30 33l2-3 2 3' fill='none' stroke='%2300ff00' stroke-width='2'/%3E%3Ctext x='32' y='45' text-anchor='middle' fill='%2300ff00' font-family='monospace' font-weight='bold' font-size='15' letter-spacing='1'%3ECH%3C/text%3E%3Cpath d='M25 49h14' stroke='%2300ff00' stroke-width='2' stroke-dasharray='2 2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+
+<!-- Dati Strutturati Schema.org per Motori di Ricerca e Bot AI -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Cyber Heroes // Oblivion - Ultra",
+  "genre": ["Interactive Fiction", "Cyberpunk", "Text Adventure"],
+  "gamePlatform": ["Web Browser", "Desktop", "Mobile"],
+  "applicationCategory": "Game",
+  "operatingSystem": "Any",
+  "inLanguage": ["it", "en", "es", "fr", "de", "pt", "ja", "zh"],
+  "author": {
+    "@type": "Organization",
+    "name": "TheOldSmokeArcade1984"
+  },
+  "description": "Interactive 1980s Green Phosphor CRT Cyberpunk narrative game featuring Lea, Smoke, and Thestral fighting the Oblivion memory-wiping virus."
+}
+</script>
+
+<script>
+if (location.protocol === 'http:' || location.protocol === 'https:') {
+  const m = document.createElement('link');
+  m.rel = 'manifest'; m.href = 'manifest.json';
+  document.head.appendChild(m);
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+  }
+}
+</script>
+</head>
+<body data-page="menu">
+<a id="skip-link" href="#main-content" class="skip-link">Salta al contenuto</a>
+<noscript>
+  <div style="padding:20px;color:#00ff00;background:#000;font-family:monospace;border:2px solid #00ff00;margin:12px">
+    <h1>CYBER HEROES // OBLIVION — TheOldSmokeArcade1984</h1>
+    <p>Gioco narrativo interattivo cyberpunk CRT fosfori verdi anni 80. Percorsi di Lea, Smoke e Thestral contro il virus Oblivion. Attiva JavaScript per avviare il terminale interattivo.</p>
+    <ul>
+      <li><a href="lea.html">Percorso Lea (Tecnica / Patch)</a></li>
+      <li><a href="smoke.html">Percorso Smoke (Strada / Guardia)</a></li>
+      <li><a href="thestral.html">Percorso Thestral (Codice / Visione)</a></li>
+    </ul>
+  </div>
+</noscript>
+<div id="crt">
+  <main id="menu" class="container" role="main">
+    <div id="top-bar" class="top-bar"></div>
+    <div id="main-content">
+      <img class="logo-skull" src="favicon_src.jpg" alt="Cyber Heroes Skull Logo" onerror="this.style.display='none'">
+      <h1>CYBER HEROES</h1>
+      <p id="m-sub" style="font-size:1.05em;margin:6px 0">LEA · SMOKE · THESTRAL<br><span style="opacity:0.8">OBLIVION PROTOCOL — ULTRA</span></p>
+      <div id="dlg" role="status" aria-live="polite" style="max-width:640px;margin:12px auto;background:#001500;border:1px solid #00ff00;padding:12px;text-align:left;font-size:0.92em;white-space:normal">
+        <span id="m-sys1">&gt; SISTEMA ATTIVO // NODO 1984</span><br>
+        <span id="m-sys2">&gt; TEMA CRT FOSFORI VERDI ANNI 80</span><br>
+        <span id="m-sys3">&gt; VERSIONE ULTRA — ACCESSIBILITÀ ARIA &amp; TTS</span><br>
+        <span id="st">Pronto.</span>
+      </div>
+      <nav aria-label="Menu Principale">
+        <button id="resumeBtn" type="button" class="btn hidden" style="border-width:2px;font-weight:bold;text-align:center"></button>
+        <button id="btn-lea" type="button" class="btn" onclick="startPath('lea')">PERCORSO LEA</button>
+        <button id="btn-smoke" type="button" class="btn" onclick="startPath('smoke')">PERCORSO SMOKE</button>
+        <button id="btn-thestral" type="button" class="btn" onclick="startPath('thestral')">PERCORSO THESTRAL</button>
+        <button id="btn-log" type="button" class="btn" onclick="showLog()">CONSULTA LOG</button>
+        <button id="btn-reset" type="button" class="btn" onclick="resetAll()">RESET MEMORIA</button>
+      </nav>
+      <p id="m-foot" style="margin-top:14px;font-size:0.8em;opacity:0.7">Versione Ultra — TheOldSmokeArcade1984</p>
+    </div>
+  </main>
+  <section id="logbox" class="container hidden" style="margin-top:14px;max-width:860px" role="region" aria-labelledby="log-title">
+    <h2 id="log-title" style="margin-top:0">LOG DI SISTEMA</h2>
+    <pre id="logview" tabindex="0"></pre>
+    <p style="margin-bottom:0"><a id="log-close" href="#" onclick="document.getElementById('logbox').classList.add('hidden');return false">← Chiudi</a></p>
+  </section>
+</div>
+<script src="engine.js"></script>
+</body>
+</html>

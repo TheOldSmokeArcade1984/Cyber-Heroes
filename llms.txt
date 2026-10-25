@@ -1,0 +1,21 @@
+# Cyber Heroes // Oblivion - Ultra
+
+> Interactive 1980s Green Phosphor CRT Cyberpunk Narrative Game developed by TheOldSmokeArcade1984. Playable in browser on PC and Mobile with full WAI-ARIA accessibility, Text-to-Speech (TTS), and 8 languages (EN, IT, ES, FR, DE, PT, JA, ZH).
+
+## Overview & Lore
+The "Oblivion" virus (`0xNULL` -> `0xVOID` -> `0xOBLIVION`) is not just wiping files—it is erasing humanity's collective memory that the internet ever existed. People in the streets drop their phones without remembering why they were holding them. Inside an isolated 1984 CRT-lit loft, three protagonists fight to preserve human memory and fragment the virus:
+- **Lea (`lea.html`)**: The technical hacker compiling low-level patches (`scan --oblivion`) and coordinating the 60-second injection window.
+- **Smoke (`smoke.html`)**: The protector patrolling the rain-soaked cyberpunk streets (Financial District, Mirai Corp, Datanet) and guarding the loft door.
+- **Thestral (`thestral.html`)**: The code-seer who perceives the viral sequence (`trace --sequence`, `7X9K-L3M8-2P4Q`) and risks being consumed by the digital abyss.
+
+## Key Files & Architecture
+- [Main Menu & Terminal Hub](https://theoldsmokearcade1984.github.io/Cyber-Heroes/index.html)
+- [Lea's Narrative Path](https://theoldsmokearcade1984.github.io/Cyber-Heroes/lea.html)
+- [Smoke's Narrative Path](https://theoldsmokearcade1984.github.io/Cyber-Heroes/smoke.html)
+- [Thestral's Narrative Path](https://theoldsmokearcade1984.github.io/Cyber-Heroes/thestral.html)
+- [Core Engine & Accessibility](https://theoldsmokearcade1984.github.io/Cyber-Heroes/engine.js)
+
+## Technical Features
+- **Platform**: HTML5, CSS3, Vanilla JavaScript, Progressive Web App (Service Worker offline support).
+- **Accessibility**: Full WAI-ARIA landmarks, live regions, keyboard navigation, custom CRT modals, and Web Speech API (`speechSynthesis`) across 8 languages.
+- **Author**: TheOldSmokeArcade1984
